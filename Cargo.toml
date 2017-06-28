@@ -1,6 +1,6 @@
 [package]
 name = "crackle_pop"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Peter Lyons <pete@peterlyons.com>"]
 
 [dependencies]

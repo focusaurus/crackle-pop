@@ -1,3 +1,5 @@
+// Full repo: https://github.com/focusaurus/crackle-pop
+
 extern crate crackle_pop;
 
 // Write a program that prints out the numbers 1 to 100 (inclusive). If the number is divisible by

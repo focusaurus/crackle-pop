@@ -16,12 +16,11 @@ extern crate crackle_pop;
 fn main() {
     // I like this version because it should use the iterator lazily and
     // if we had to print out many more numbers, the ram usage would be flatter I think
-    for pop in (1..101).map(crackle_pop::format) {
+    for pop in (1..101).map(crackle_pop::snap) {
         println!("{}", pop);
     }
     // This version uses a bit more ram at once but makes fewer system calls.
     // Probably more effecient for small sizes but if we had huge sizes would use excessive ram.
-    // let pops: Vec<String> = (1..101).map(crackle_pop::format).collect();
+    // let pops: Vec<String> = (1..101).map(crackle_pop::snap).collect();
     // println!("{}", pops.join("\n"));
-
 }

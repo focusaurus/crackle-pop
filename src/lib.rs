@@ -2,22 +2,22 @@
 mod tests {
     use super::*;
     #[test]
-    fn test_format() {
-        assert_eq!(format(0), "CracklePop");
-        assert_eq!(format(1), "1");
-        assert_eq!(format(2), "2");
-        assert_eq!(format(3), "Crackle");
-        assert_eq!(format(4), "4");
-        assert_eq!(format(5), "Pop");
-        assert_eq!(format(15), "CracklePop");
-        assert_eq!(format(45), "CracklePop");
-        assert_eq!(format(33333), "Crackle");
-        assert_eq!(format(55555), "Pop");
-        assert_eq!(format(55558), "55558");
+    fn test_snap() {
+        assert_eq!(snap(0), "CracklePop");
+        assert_eq!(snap(1), "1");
+        assert_eq!(snap(2), "2");
+        assert_eq!(snap(3), "Crackle");
+        assert_eq!(snap(4), "4");
+        assert_eq!(snap(5), "Pop");
+        assert_eq!(snap(15), "CracklePop");
+        assert_eq!(snap(45), "CracklePop");
+        assert_eq!(snap(33333), "Crackle");
+        assert_eq!(snap(55555), "Pop");
+        assert_eq!(snap(55558), "55558");
     }
 }
 
-pub fn format(number: u32) -> String {
+pub fn snap(number: u32) -> String {
     let mut result = String::new();
     let by3 = number % 3 == 0;
     let by5 = number % 5 == 0;

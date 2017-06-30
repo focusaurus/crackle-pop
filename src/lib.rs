@@ -17,6 +17,7 @@ mod tests {
     }
 }
 
+/// This is the main function that formats a number according to the CracklePop/FizzBuzz exercise.
 pub fn snap(number: u32) -> String {
     let mut result = String::new();
     let by3 = number % 3 == 0;
